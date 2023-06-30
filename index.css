@@ -157,7 +157,7 @@ body {
 }
 
 /*섹션1 신제품 제목*/
-.sec_1_tit {
+.section_tit {
     width: 980px;
     height: 49px;
     padding-bottom: 14px;
@@ -165,12 +165,12 @@ body {
     text-align: left;
 }
 
-.sec_1_tit h2 {
+.section_tit h2 {
     color: #1d1d1f;
     letter-spacing: 0.007em;
 }
 
-.sec_1_tit span {
+.section_tit span {
     color: #6e6e73;
 }
 
@@ -180,6 +180,7 @@ body {
     padding: 10px 0 40px;
     margin: 0 0 54px;
     display: flex;
+    overflow: hidden;
 }
 
 /*섹션1 카드 사이즈*/
@@ -188,6 +189,7 @@ body {
     height: 500px;
     position: relative;
     margin-right: 20px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /*섹션1 배경 이미지*/
@@ -197,7 +199,8 @@ body {
 }
 
 /*섹션1 카드 글 내용*/
-.card_content {
+.card_content,
+.specialist_content {
     position: absolute;
     top: 0;
     padding: 30px;
@@ -206,7 +209,8 @@ body {
     margin-bottom: 0.4em;
 }
 
-.card_tit {
+.card_tit,
+.specialist_tit {
     font-size: 12px;
     font-weight: 600;
     color: #6e6e73;
@@ -216,9 +220,10 @@ body {
     letter-spacing: -0.5px;
 }
 
-.card_txt {
+.card_txt,
+.specialist_txt {
     line-height: 1.25;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: -2px;
     color: #1d1d1f;
@@ -240,11 +245,104 @@ body {
     color: #fff;
 }
 
-/*섹션2*/
-.sec_2_tit {
-    width: 980px;
-    height: 49px;
-    padding-bottom: 14px;
-    margin: 0 auto;
-    text-align: left;
+/*섹션2 스페셜리스트*/
+.sec2 {
+    margin-bottom: 54px;
+}
+
+.sec2_content {
+    display: flex;
+}
+
+.sec2_specialist {
+    height: 500px;
+    width: 480px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.specialist_content,
+.sec2_r1_content {
+    width: 480px;
+}
+
+.specialist_tit {
+    margin-bottom: 4.8px;
+}
+
+/*섹션2 오른쪽 1번*/
+.sec2_right1 {
+    width: 480px;
+    height: 240px;
+    position: relative;
+}
+
+.sec2_r1_content {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 30px;
+}
+
+.sec2_r1_tit,
+.sec2_r2_tit {
+    padding-top: 20px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.29167;
+}
+
+/*섹션2 오른쪽 2번*/
+.sec2_right2 {
+    width: 480px;
+    height: 240px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.sec2_r2_content {
+    width: 230px;
+    height: 178px;
+    padding: 30px 0 30px 30px;
+    position: absolute;
+    top: 0;
+}
+
+.sec2_r2_tit {
+    padding-top: 21px;
+    letter-spacing: -1px;
+    line-height: 1.49167;
+}
+
+/*섹션3*/
+.sec3_container {
+    height: 290px;
+    padding: 10px 0 40px;
+    display: flex;
+    overflow: hidden;
+}
+
+.sec3_card {
+    width: 313px;
+    height: 240px;
+    margin-right: 20px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sec3_icon {
+    padding-bottom: 5px;
+}
+
+.sec3_card p {
+    line-height: 1.39167;
+    letter-spacing: -2px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.sec3_card span {
+    color: #3f6eb8;
 }
